@@ -10,7 +10,7 @@
 
     }
     .link{
-        display:flex; 
+        display:flex-end; 
         justify-content:end; 
         position:absolute;
         top: 5px;
@@ -70,7 +70,7 @@
     }
 
     &-tech-list {
-        display: flex;
+        display: flex-end;
         align-items: flex-end;
         gap:0;
         flex-wrap: wrap;
