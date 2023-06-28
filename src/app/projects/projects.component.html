@@ -1,0 +1,29 @@
+<section id="projects">
+    <div class="container" >
+        <h1 class="section-heading">Some Things I've Built</h1>
+        <ul class="project-grid">
+            <li class="card" *ngFor="let project of displayDetails">
+                <div class="link">
+                    <a [href]="project.githubLink" *ngIf="project.githubLink">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+
+                <div class="project-header">
+                    <span class="project-title">{{project.name}}</span>
+                </div>
+                <p class="project-desc">{{project.description}}</p>
+                <ul class="project-tech-list">
+                    <li *ngFor="let tech of project.mainTech">
+                        {{tech}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="text-center">
+            <button class="btn" (click)="showMore()">
+                {{btnText}}
+            </button>
+        </div>
+    </div>
+</section>

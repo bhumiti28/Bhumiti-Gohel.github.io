@@ -1,0 +1,112 @@
+section {
+    background-color: var(--px-gray-1);
+}
+
+.img {
+    vertical-align: middle;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+.card {
+    padding: 30px;
+    box-shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+    border-radius: 20px !important;
+    display: inline-block;
+}
+
+.socials {
+    .list {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+
+        li {
+            margin: 5px;
+
+            a {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                font-size: 15px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--px-theme);
+                border: 2px solid var(--px-theme);
+                color: var(--px-theme-text);
+                border-radius: 10px;
+                transition: ease all 0.35s;
+
+            }
+
+            a:hover {
+                background-color: var(--px-theme-text) !important;
+                color: var(--px-theme);
+            }
+
+            .normal_img {
+                width: 15px;
+                height: 15px;
+            }
+
+            .hover_img {
+                justify-content: center;
+                position: absolute;
+                top: auto;
+                left: auto;
+                width: 15px;
+                height: 15px;
+                display: none;
+            }
+
+            .img:hover .hover_img {
+                display: inline;
+            }
+        }
+
+
+
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .socials {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .text-xs-center {
+        text-align: center !important;
+    }
+}
+
+.btn {
+    margin: 10px;
+    padding: 5px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--px-theme);
+    color: var(--px-theme-text);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: ease all 0.35s;
+    font-weight: 500;
+    outline: none;
+    box-shadow: none;
+    border: 2px solid var(--px-theme);
+}
+
+.btn:hover {
+    background-color: var(--px-bg);
+    color: var(--px-theme);
+}

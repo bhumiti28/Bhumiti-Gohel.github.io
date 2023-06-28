@@ -1,0 +1,130 @@
+@media (max-width: 1024px) {
+
+    .left,
+    .right {
+        display: none;
+    }
+}
+
+.left {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: black;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+    li {
+        margin-bottom: 20px;
+
+        a {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--px-theme);
+            border: 2px solid var(--px-theme);
+            color: var(--px-theme-text);
+            border-radius: 10px;
+            transition: ease all 0.35s;
+  
+        }
+
+        a:hover {
+            background-color: var(--px-theme-text) !important;
+            color: var(--px-theme);
+        }
+
+        .normal_img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .hover_img {
+            justify-content: center;
+            position: absolute;
+            top: auto;
+            left: auto;
+            width: 20px;
+            height: 20px;
+            display: none;
+        }
+
+        .img:hover .hover_img {
+            display: inline;
+        }
+    }
+
+    li:last-of-type {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+.right {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: var(--light-slate);
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+
+    a {
+        margin: 20px auto;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-family: var(--font-mono);
+        font-size: var(--fz-sm);
+        line-height: var(--fz-lg);
+        letter-spacing: 0.1em;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        display: inline-block;
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        color: var(--px-theme);
+        
+        position: relative;
+
+    }
+    a:hover{
+        color: var(--px-text);
+    }
+
+}
+
+.line {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: black;
+}

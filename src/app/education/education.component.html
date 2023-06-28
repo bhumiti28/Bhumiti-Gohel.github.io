@@ -1,0 +1,16 @@
+<section id="education">
+    <div class="container">
+        <h1 class="section-heading">Education</h1>
+        <div class="d-flex justify-content-center card">
+            <div *ngFor="let education of educationDetails">
+                <i class="bi bi-mortarboard-fill"></i>
+                <div class="card-content">
+                    <p>{{education.duration}}</p>
+                    <h4>{{education.name}}, {{education.city}}</h4>
+                    <p>{{education.degree}}</p>
+                    <p>{{education.marks}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

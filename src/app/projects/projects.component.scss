@@ -1,0 +1,110 @@
+.card {
+    padding: 30px;
+    box-shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+    border-radius: 20px !important;
+    display: grid;
+
+    &-content {
+        padding-left: 50px;
+        margin-bottom: 50px;
+
+    }
+    .link{
+        display:flex; 
+        justify-content:end; 
+        position:absolute;
+        top: 5px;
+        right: 5px;
+
+        a{
+
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+    
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+    
+            color: var(--px-theme-text);
+            background-color: var(--px-theme);
+            border-radius: 100%;
+            border: 2px solid var(--px-theme);
+    
+            transition: ease all 0.35s;
+        }
+        a:hover{
+            color: var(--px-theme);
+            background-color: var(--px-bg);
+        }
+    }
+
+}
+
+.project {
+
+    &-grid {
+        list-style: none;
+        padding: 0px;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 15px;
+        position: relative;
+    }
+
+    &-header {
+        -webkit-box-align: center;
+        align-items: center;
+
+    }
+
+    &-title{
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    &-desc{
+        // font-size: 15px;
+        margin: 10px 0;
+    }
+
+    &-tech-list {
+        display: flex;
+        align-items: flex-end;
+        gap:0;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 20px 0px 0px;
+        list-style: none;
+
+        li {
+            font-size: 12px;
+            line-height: 1.75;
+            margin-right: 15px;
+            color: var(--px-text)
+        }
+    }
+}
+
+.btn{
+    margin:10px;
+    padding: 5px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--px-theme);
+    color: var(--px-theme-text);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: ease all 0.35s;
+    font-weight: 500;
+    outline: none;
+    box-shadow: none;
+    border: 2px solid var(--px-theme);
+
+}
+.btn:hover{
+    background-color: var(--px-bg);
+    color: var(--px-theme);
+}

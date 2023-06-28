@@ -1,0 +1,23 @@
+section{
+    background-color: var(--px-gray-1);
+}
+
+h3{
+    color: var(--px-theme);
+    font-weight: 600;
+    margin:0;
+    font-size: 20px;
+}
+
+.tech{
+
+    &-item{
+        display: inline-block;
+        margin:10px;
+        cursor: default;
+    }
+    &-item:hover{
+        color: var(--px-theme);
+        font-weight: 600;
+    }
+}

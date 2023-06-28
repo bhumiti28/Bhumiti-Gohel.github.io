@@ -1,0 +1,11 @@
+<section id="tech">
+    <div class="container">
+        <h1 class="section-heading">Tech Stack</h1>
+        <div *ngFor="let topic of techDetails" class="mb-4">
+            <h3>{{topic.heading}}</h3>
+            <div class="">
+                <span class="tech-item" *ngFor="let tech of topic.techs">{{tech}}</span>
+            </div>
+        </div>
+    </div>
+</section>
